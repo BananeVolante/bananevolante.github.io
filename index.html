@@ -1,33 +1,83 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<link rel="icon" type="image/png" href="data:image/png;base64,">
-<title>Best Motherfucking Website</title>
-<style>
-	@media (prefers-color-scheme: dark){
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
+	<link rel="icon" type="image/png" href="data:image/png;base64,">
+	<title>Portfolio</title>
+	<style>
+		@media (prefers-color-scheme: dark) {
+			body {
+				background: #0d1117;
+				color: #c9d1d9;
+			}
+		}
+
 		body {
-			background:#000
+			margin: 1em auto;
+			max-width: 40em;
+			padding: 0 .62em 3.24em;
+			font: 1.2em/1.62 sans-serif
 		}
-	}
-	body{
-		margin:1em auto;
-		max-width:40em;
-		padding:0 .62em 3.24em;
-		font:1.2em/1.62 sans-serif
-	}
-	h1,h2,h3 {
-		line-height:1.2
-	}
-	@media print{
-		body{
-			max-width:none
+
+		h1,
+		h2,
+		h3 {
+			line-height: 1.2
 		}
-	}
-</style>
-</head><body><article>
-	<header>
-		<h1>Title</h1>
-	</header>
-</body></html>
+
+		@media print {
+			body {
+				max-width: none
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<article>
+		<header>
+			<h1>Portfolio</h1>
+		</header>
+		<section>
+			<H2>
+				Vulkan
+			</H2>
+			<p>I am currently learning Vulkan. I started with <a href="https://vkguide.dev/">Victor Blanco's Vulkan guide</a>  and <a href="https://vulkan-tutorial.com/">Alexander Overvoorde's Vulkan tutorial</a>, then used the tutorials as a base to implement various features and experiment with the possibilities offered by Vulkan.</p>
+			<figure>
+				<iframe width="560" height="315"
+					src="https://www.youtube-nocookie.com/embed/M7R9STDmWZw?si=yGaz3QkPLd53oMgZ"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</figure>
+
+
+
+		</section>
+
+		<section>
+			<h2>A path tracer</h2>
+			<p>I modified a school ray tracing project and turned it into a CPU path tracer</p>
+
+			<figure>
+				<iframe width="560" height="315"
+					src="https://www.youtube-nocookie.com/embed/GDW6mCaAjFY?si=m1_ieTD_GS1ONCq6"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Pathfinding using a genetic algorithm</h2>
+			<p>A school project consisting in creating a path finding algorithm using a genetic algorithm</p>
+
+			<figure>
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h0L8upcOSZ0?si=TobBanz5Voa7VptE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>		</section>
+</body>
+
+</html>
