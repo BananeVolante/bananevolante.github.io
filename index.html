@@ -29,39 +29,74 @@
 			line-height: 1.2
 		}
 
+		h1{
+			font-size: 2em;
+			border-bottom: 1px solid white;
+		}
+
+
 		@media print {
 			body {
 				max-width: none
 			}
 		}
+
+figure{
+	border: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 	</style>
 </head>
 
 <body>
+<article>
+	<h1>Professional experiences</h1>
+	<section>
+		<h2>A 6 months graphics programmer internship in EFICAD</h2>
+		<p>
+			Development of a base for a CAD application’s new graphic engine in OpenGL 4.6 and C++20. Includes a scene graph, a programming interface useable by a general programmer, support for transparency and text, a massive increase in performance, notably when displaying long trajectories, controls using a 3D mouse.
+		</p>
+	</section>
+
+	<section>
+		<h2>A 4 months internship in a laboratory in Nara, Japan</h2>
+		<p>
+			Participation in a competition consisting in obtaining a precise estimation of the position of a phone over time in indoor environment.		<br>
+			I finished third out of eight participants.
+		</p>
+	</section>
+
+	<section>
+		<h2>A 2 months internship in ADIS</h2>
+		<p>
+			Development of a microservice composed of a REST API and a web GUI in order to improve ADIS' software factory.
+		</p>
+	</section>
+</article>
 	<article>
-		<header>
-			<h1>Portfolio</h1>
-		</header>
+			<h1>Various projects</h1>
 		<section>
-			<H2>
+			<H3>
 				Vulkan
-			</H2>
-			<p>I am currently learning Vulkan. I started with <a href="https://vkguide.dev/">Victor Blanco's Vulkan guide</a>  and <a href="https://vulkan-tutorial.com/">Alexander Overvoorde's Vulkan tutorial</a>, then used the tutorials as a base to implement various features and experiment with the possibilities offered by Vulkan.</p>
+			</H3>
+			<p>I am currently learning Vulkan. <br> I started with <a href="https://vkguide.dev/">Victor Blanco's Vulkan guide</a>  and <a href="https://vulkan-tutorial.com/">Alexander Overvoorde's Vulkan tutorial</a>, then used the tutorials as a base to implement various features and experiment with the possibilities offered by Vulkan.</p>
 			<figure>
+				<p>Loading a GLTF file with animations and skinning.</p>
 				<iframe width="560" height="315"
 					src="https://www.youtube-nocookie.com/embed/M7R9STDmWZw?si=yGaz3QkPLd53oMgZ"
 					title="YouTube video player" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</figure>
-
-
-
 		</section>
 
 		<section>
-			<h2>A path tracer</h2>
-			<p>I modified a school ray tracing project and turned it into a CPU path tracer</p>
+			<h3>A path tracer</h3>
+			<p>I modified a ray tracing project done in school and turned it into a CPU path tracer</p>
 
 			<figure>
 				<iframe width="560" height="315"
@@ -73,7 +108,7 @@
 		</section>
 
 		<section>
-			<h2>Pathfinding using a genetic algorithm</h2>
+			<h3>Pathfinding using a genetic algorithm</h3>
 			<p>A school project consisting in creating a path finding algorithm using a genetic algorithm</p>
 
 			<figure>
