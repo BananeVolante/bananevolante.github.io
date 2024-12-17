@@ -29,7 +29,7 @@
 			line-height: 1.2
 		}
 
-		h1{
+		h1 {
 			font-size: 2em;
 			border-bottom: 1px solid white;
 		}
@@ -41,49 +41,55 @@
 			}
 		}
 
-figure{
-	border: 1px solid gray;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
+		figure {
+			border: 1px solid gray;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 	</style>
 </head>
 
 <body>
-<article>
-	<h1>Professional experiences</h1>
-	<section>
-		<h2>A 6 months graphics programmer internship in EFICAD</h2>
-		<p>
-			Development of a base for a CAD application’s new graphic engine in OpenGL 4.6 and C++20. Includes a scene graph, a programming interface useable by a general programmer, support for transparency and text, a massive increase in performance, notably when displaying long trajectories, controls using a 3D mouse.
-		</p>
-	</section>
-
-	<section>
-		<h2>A 4 months internship in a laboratory in Nara, Japan</h2>
-		<p>
-			Participation in a competition consisting in obtaining a precise estimation of the position of a phone over time in indoor environment.		<br>
-			I finished third out of eight participants.
-		</p>
-	</section>
-
-	<section>
-		<h2>A 2 months internship in ADIS</h2>
-		<p>
-			Development of a microservice composed of a REST API and a web GUI in order to improve ADIS' software factory.
-		</p>
-	</section>
-</article>
 	<article>
-			<h1>Various projects</h1>
+		<h1>Professional experiences</h1>
+		<section>
+			<h2>A 6 months graphics programmer internship in EFICAD</h2>
+			<p>
+				Development of a base for a CAD application’s new graphic engine in OpenGL 4.6 and C++20. Includes a
+				scene graph, a programming interface useable by a general programmer, support for transparency and text,
+				a massive increase in performance, notably when displaying long trajectories, controls using a 3D mouse.
+			</p>
+		</section>
+
+		<section>
+			<h2>A 4 months internship in a laboratory in Nara, Japan</h2>
+			<p>
+				Participation in a competition consisting in obtaining a precise estimation of the position of a phone
+				over time in indoor environment. <br>
+				I finished third out of eight participants.
+			</p>
+		</section>
+
+		<section>
+			<h2>A 2 months internship in ADIS</h2>
+			<p>
+				Development of a microservice composed of a REST API and a web GUI in order to improve ADIS' software
+				factory.
+			</p>
+		</section>
+	</article>
+	<article>
+		<h1>Various projects</h1>
 		<section>
 			<H3>
 				Vulkan
 			</H3>
-			<p>I am currently learning Vulkan. <br> I started with <a href="https://vkguide.dev/">Victor Blanco's Vulkan guide</a>  and <a href="https://vulkan-tutorial.com/">Alexander Overvoorde's Vulkan tutorial</a>, then used the tutorials as a base to implement various features and experiment with the possibilities offered by Vulkan.</p>
+			<p>I am currently learning Vulkan. <br> I started with <a href="https://vkguide.dev/">Victor Blanco's Vulkan
+					guide</a> and <a href="https://vulkan-tutorial.com/">Alexander Overvoorde's Vulkan tutorial</a>,
+				then used the tutorials as a base to implement various features and experiment with the possibilities
+				offered by Vulkan.</p>
 			<figure>
 				<p>Loading a GLTF file with animations and skinning.</p>
 				<iframe width="560" height="315"
@@ -96,9 +102,12 @@ figure{
 
 		<section>
 			<h3>A path tracer</h3>
-			<p>I modified a ray tracing project done in school and turned it into a CPU path tracer</p>
+			<p>
+				During a school project, we created a CPU ray tracer. I modified it and turned it into a path tracer.</p>
 
 			<figure>
+				<p>The path tracer in action</p>
+
 				<iframe width="560" height="315"
 					src="https://www.youtube-nocookie.com/embed/GDW6mCaAjFY?si=m1_ieTD_GS1ONCq6"
 					title="YouTube video player" frameborder="0"
@@ -112,7 +121,30 @@ figure{
 			<p>A school project consisting in creating a path finding algorithm using a genetic algorithm</p>
 
 			<figure>
-				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h0L8upcOSZ0?si=TobBanz5Voa7VptE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>		</section>
+				<p>The genetic algorithm in action.</p>
+				<iframe width="560" height="315"
+					src="https://www.youtube-nocookie.com/embed/h0L8upcOSZ0?si=TobBanz5Voa7VptE"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</section>
+
+
+		<section>
+			<h3>OpenGL</h3>
+			<p>
+				I followed <a href="https://learnopengl.com">this guide</a> to learn how to use OpenGL and implemented various small features. During my 6 month internship, I had the occasion to improve my knowledge of OpenGL and learn how to use its latest features.
+			</p>
+		</section>
+
+		<section>
+			<h3>A compiler for an esoteric language</h3>
+			<p>As a school project, in a group of 4, we developed a compiler for a programming language that only uses binary trees. We parsed the source code using ANTLR, turned it into an Abstract Syntax Tree, then into three-address code and finally into C++, that we compiled. Some code optimization techniques have been implemented.</p>
+		</section>
+
+		<section>
+
+		</section>
 </body>
 
 </html>
