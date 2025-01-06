@@ -18,7 +18,7 @@
 
 		body {
 			margin: 1em auto;
-			max-width: 40em;
+			max-width: 50em;
 			padding: 0 .62em 3.24em;
 			font: 1.2em/1.62 sans-serif
 		}
@@ -47,6 +47,14 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+		}
+
+
+		.aligned_images
+		{
+			display: flex;
+
+			flex-direction: row;
 		}
 	</style>
 </head>
@@ -103,6 +111,17 @@
 					title="YouTube video player" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</figure>
+
+
+			<figure >
+				<p>Screen space ambient occlusion : before, after, and Ambien occlusion map</p>
+				<div class="aligned_images">				
+					<img width="250" src = "images/SSAO_before.png"/>
+					<img width="250" src = "images/SSAO_after.png"/>
+					<img width="250" src = "images/SSAO_map.png"/>
+				</div>
+
 			</figure>
 		</section>
 
